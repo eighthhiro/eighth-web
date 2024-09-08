@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<title>EIGHTH |</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Gulzar&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Gulzar&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@200&display=swap" rel="stylesheet">
+<style>
+    body{
+        margin: 0;
+    }
+    </style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie">
+</head>
+    
+<body>
+    <!-- Our header! -->
+    <header id="header">
+        <a href="#home"><img src="Eighth%20Logo_adobe_express.png" class="logo" alt="Logo"></a>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+<!-- Our Banner -->
+    <section class="banner" id="home">
+        <h2 style="font-family: 'Cinzel', serif;color:white;letter-spacing: 3px;font-size: 30px">We Create Brands A <span>Lifestyle</span></h2>
+        <a href="#about" class="btn" style="--clr:#eeba2b"><span>Read Our Story</span> <i></i></a>
+    </section>
+<!-- Our About -->
+<section class="sec" id="about">
+    <div class="content">
+        <div class="cholo">
+            <h1>About us</h1> 
+        <h3>Who We Are</h3>
+        <p>A group of success-minded people who are passionate about creating brands a lifestyle in total professionalism and exclusivity. We passionately work to provide our clients the satisfaction that meets their standards and develop them a pleasing, responsive and effective websites.</p>
+            <div class="slider">
+            <div class="slides">
+                
+                <input type="radio" name="radio-btn" id="radio1">
+
+                <input type="radio" name="radio-btn" id="radio2">   
+
+                <input type="radio" name="radio-btn" id="radio3">   
+
+                <input type="radio" name="radio-btn" id="radio4">   
+                
+                <div class="slide first">
+                    <img src="About1.jpg" alt="First">
+                </div>
+                <div class="slide">
+                    <img src="About2.jpg" alt="Second">
+                </div>
+                <div class="slide">
+                    <img src="About3.jpg" alt="Third">
+                </div>
+                <div class="slide">
+                    <img src="About4.jpg" alt="Fourth">
+                </div>
+                
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                
+                ++<div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                
+                </div>
+                
+                <script type="text/javascript">
+                    var counter = 1;
+                    setInterval(function(){
+                        document.getElementById('radio' + counter).checked = true;
+                        counter++;
+                        if(counter > 4){
+                            counter = 1;
+                        }
+                    }, 2500);
+                </script>
+            </div>
+            </div>
+            </div>
+        </div>
+</section>
+<!-- Our Services -->
+<section class="ser" id="services">  
+    <h1>Services</h1>
+    <img src="browser.png">
+    <h2> Web Developing</h2>
+    <p> We Develop High Quality Websites for E-Commerce or Information Website</p>
+    <img src="paint.png">
+    <h2> Web Design</h2>
+    <p> We Will Design Your Websites In A Luxurious Way or Any Design You Request</p>
+    <img src="computer.png">
+    <h2> App & Software Developing</h2>
+    <p> We Strive to Develop Apps Progressively</p>
+    </section>
+<!-- Our Stats -->
+
+<!-- Our Portfolio -->
+<section class="por" id="portfolio">  
+    <h1>Portfolio</h1>
+    </section>
+<!-- Our Team -->
+<section class="tea" id="team">  
+    <h1>Goodboys(team)</h1>
+    </section>
+<!-- Our Contact -->
+<section class="con" id="contact">  
+    <h1>Eighth</h1>
+    </section>    
+<!-- Js for the animation -->
+<script type="text/javascript">
+window.addEventListener("scroll", function(){
+    var header= document.querySelector("header");
+    header.classList.toggle("sticky",window.scrollY > 0);
+})
+    </script>
+
+
+</body></html>

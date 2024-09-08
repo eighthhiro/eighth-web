@@ -1,0 +1,329 @@
+html, .body
+{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    min-height: 1000px;
+ 
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0px;
+    z-index: 1000;
+    transition: 0.6s;
+}
+header.sticky
+{
+    padding: 5px 100px;
+    background: #fff;
+    border-bottom: 1px solid (0,0,0,.1);
+}
+header .logo
+{
+    width: 80px;
+    height: 80px;
+    padding-left: 15px;
+    position: relative;
+    font-weight: 700;
+    transition: 0.6s;
+}
+header ul
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    position: relative;
+    list-style: none
+}
+header ul li a
+{
+    position: relative;
+    margin: 0 20px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 300;
+    transition: 0.6s;
+}
+header.sticky ul li a
+{
+    color: black;
+    padding-right: 100px
+
+}
+.banner
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(Background3.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner h2 span
+{
+    color: #eeab2b;
+}
+.btn
+{
+    position: relative;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    padding: 10px 30px;
+    transition: 0.5s;
+    position: absolute;
+    align-self: center;
+    margin-top: 150px;
+}
+.btn:hover
+{
+    letter-spacing: 0.25em;
+    background: var(--clr);
+    color: var(--clr);
+    box-shadow: 0 0 35px var(--clr);
+}
+.btn::before
+{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #27282c;
+}
+.btn span
+{
+    position: relative;
+    z-index: 1;
+}
+
+.sec
+{
+    background: #040404;
+    padding:40px;
+    min-height: 100vh;
+    display: flex;
+}
+.sec .content
+{
+    position: flex;
+    text-align: justify;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.cholo
+{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.sec h1
+{
+    
+    font-size: 60px;
+    font-weight: 200;
+    color: #fff;
+    text-align: center;
+}
+.sec h3
+{
+    font-size: 30px;
+    font-weight: 200;
+    margin-bottom: 1px;
+    color:#eea212;
+    text-align: center;
+}
+.sec p
+{
+    
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+.slider
+{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slides
+{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slides
+{
+    width: 20%;
+    transition: 2s;
+}
+.slide img
+{
+    width: 800px;
+    height: 500px;
+}
+.navigation-manual
+{
+   position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn
+{
+    border: 3px solid #eeba2b;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    margin-top: 500px;
+}
+.manual-btn:not(:last-child)
+{
+    margin-right: 40px;
+}
+.manual-btn:hover
+{
+    background: #eeba2b;}
+#radio1:checked ~ .first
+{
+     margin-left: 0%;
+}
+#radio2:checked ~ .first
+{
+     margin-left: -500%;
+}
+#radio3:checked ~ .first
+{
+     margin-left: -1000%;
+}
+#radio4:checked ~ .first
+{
+     margin-left: -1500%;
+}
+.navigation-auto
+{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 440px;
+}
+.navigation-auto div
+{
+    border: 2px solid #eeab2b;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    transition: 1s;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1
+{
+    background: #eeab2b
+}
+#radio2:checked ~ .navigation-auto .auto-btn2
+{
+    background: #eeab2b
+}
+#radio3:checked ~ .navigation-auto .auto-btn3
+{
+    background: #eeab2b
+}
+#radio4:checked ~ .navigation-auto .auto-btn4
+{
+    background: #eeab2b
+}
+.ser
+{
+    background: #111111;
+    padding:100px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ser h1
+{
+    font-size: 60px;
+    font-weight: 200;
+    color: #fff;
+    position:  absolute;
+    padding-bottom: 600px;
+}
+.services .content
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.services .content .servicesBx
+{
+    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+.por
+{
+    background: #222222;
+    padding:100px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tea
+{
+    background: #333333;
+    padding:100px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.con
+{
+    background: #fff;
+    padding:100px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(Background4.png);
+    background-size: cover;
+}
+.con h1
+{
+    color: #000000;
+    text-transform: uppercase;
+}
